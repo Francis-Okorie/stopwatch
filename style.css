@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+    font-family: "Afacad Flux", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.stopwatch-content{
+    background-color: #fff;
+    padding: 2rem;
+    width: 300px;
+    margin-top: 8rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.stopwatch-img {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.stopwatch-content::before {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -20px;
+    left: -25px;
+    background-color: #f41b75;
+    z-index: -1;
+    border-radius: .7rem;
+}
+
+.stopwatch-content::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -20px;
+    right: -25px;
+    background-color: #419aff;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.displaytime {
+    text-align: center;
+}
